@@ -1,0 +1,91 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+
+.projects{
+    background-color: transparent;
+    border: 1px  solid greenyellow;
+    border-radius: 0 40px 0 40px;
+    animation: projects-anima 0.8 s ease-in forwards;
+    transition: all 0.5s;
+    cursor: default;
+    padding: 20px;
+}
+.color-green{
+    color: greenyellow;
+}
+.change-color{
+    color: red;
+}
+.projects:hover{
+    box-shadow: 5px 5px 10px greenyellow;
+}
+.projects-NewCss{
+    border: 2px  solid red;
+}
+
+.projects-NewCss:hover{
+    box-shadow: 5px 5px 10px red;
+}
+.project-names{
+    font-size: 25px;
+}
+@keyframes projects-anima {
+    0% {
+      transform: translateY(500px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+.project-details-div{
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    font-family: "Walter Turncoat", cursive;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects-picture{
+    border-radius: 0 40px 0 40px;
+    transition: all 0.5s;
+    cursor: none;
+    width: 100%;
+    height: 200px;
+    /* aspect-ratio: 3/2;
+    object-fit: contain; */
+}
+.projects-picture:hover{
+    transform: scale(1.050);
+}
+.project-Btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Walter Turncoat", cursive;
+    border-radius: 0 20px 0 20px;
+    background-color: gray;
+    border: 2px solid white;
+    transition: all 0.5s;
+    animation: btn-anima 0.8 s ease-in forwards;
+
+}
+.project-Btn:hover{
+    color: black;
+    background-color: #bde1b1;
+    border: 2px solid greenyellow   ;
+    font-size: 26px;
+    padding: 5.8px 15px;
+}
+@keyframes projects-anima {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

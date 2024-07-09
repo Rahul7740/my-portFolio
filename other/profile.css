@@ -1,0 +1,58 @@
+.h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin: 45px 0;
+    animation: h1Animation 1s linear forwards;
+}
+@keyframes h1Animation {
+    0% {
+      transform: translateY(-100px) scale(0);
+      opacity: 0;
+    }
+    70%{
+        transform: translateY(20px) scale(1);
+        opacity: 1;   
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+.h1Color{
+    color: black;
+}
+.profile-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+    height: 50vh;
+}
+.profile-container-NewCss{
+    color: black;
+}
+.profile-piture{
+    max-width: 350px;
+    width: 100%;
+    border-radius:0 30px 0 30px ;
+    box-shadow: -5px 5px 10px white;
+    transition: all 0.5s;
+}
+
+.profile-piture:hover{
+    transform: translateY(-4px) scale(0.9);
+}
+.profile-piture-newCss{
+    box-shadow: -5px 5px 10px black;
+}
+.profile-details{
+    font-family: "Walter Turncoat", cursive;
+    font-size: 30px;
+    line-height: 60px;
+    max-width: 500px;
+    width: 100%;
+    cursor: default;
+}

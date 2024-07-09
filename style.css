@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+body {
+  background-color: black;
+  font-family: "Kanit", sans-serif;
+}
+.menu {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  background-color: white;
+  padding: 0px 30px;
+  border-radius: 15px;
+  gap: 15px;
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: menuOld 0.4s linear forwards;
+  animation: menuanimation 1s linear forwards;
+  transition: all 0.5s;
+}
+.menu:hover{
+    box-shadow: 6px 5px 10px #ffffff83;
+}
+.menu-icons {
+  fill: gray;
+  transform: scale(0.8);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.menu-icons:hover {
+  transform: scale(1.1);
+  fill: #ef4444;
+}
+.menuNewCss {
+  animation: menuNew 0.4s linear forwards;
+}
+.menuNewCss:hover{
+    box-shadow: 6px 5px 10px rgb(77, 73, 73);
+}
+@keyframes menuanimation {
+    0% {
+        margin-bottom: -100px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+@keyframes menuOld {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes menuNew {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+/* ==================main section css start================== */
+.main-section{
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns:1fr 1fr ;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+}
+.main-section-NewCss{
+    color: black;
+}
+.introduction-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor:default;
+    animation: introcuctionAnimate 0.4s linear forwards;
+}
+@keyframes introcuctionAnimate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.benner{
+  transition: all 0.52s;
+  filter: drop-shadow(0 0 100px #ef4444a2);
+  transform: scale(0.9);
+}
+.benner:hover{
+  filter: drop-shadow(0 0 100px #ef4444b9);
+  transform: scale(1);
+
+
+}
+h1{
+    font-size: 60px;
+}
+.corus{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+.name{
+    background:  linear-gradient(to right, #7e021f 0%,#6b011a 25%,#520013 74%,#410210 77%);
+    font-weight: 900;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.name::before{
+  content: "  ";
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  background: linear-gradient(to right, #7e021f 0%,#6b011a 25%,#470111 74%,#36010d 77%);
+  height: 4%;
+  transition: all 0.5s;
+  transform-origin: center;
+  transform: scale(0);
+  opacity: 0;
+}
+.name:hover::before{
+  transform: scale(1);
+  opacity: 1;
+}
+.social-media{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    animation: socialmedia-A 0.4s 0.4s linear forwards;
+    opacity: 0;
+}
+@keyframes socialmedia-A {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.socialMedia-btns{
+    padding: 13px 17px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    
+}
+
+
+.socialMedia-btns:hover{
+    
+    box-shadow: 0 0 20px #ef4444;
+}
+.fab{
+    transform: scale(1.9);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+.socialMedia-btns:hover .fab{
+    transform: scale(2.1) rotate(360deg);
+}
+.feb-NewCss{
+    color: black;
+}
+/* ==================main section css end================== */
+
+/* =======dark light slider button s start====== */
+
+.slider {
+  position: fixed;
+  right: 4%;
+  bottom: 1%;
+  max-width: 60px;
+  width: 100%;
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  padding: 3px;
+  border: 1px solid black;
+  animation: sliderAnimation 1s linear forwards;
+
+}
+@keyframes sliderAnimation {
+    0% {
+        margin-right: -100px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+.cercle {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  animation: toggleOff 0.4s linear forwards;
+  border: 1px solid black;
+}
+
+.cercleNewCss {
+  animation: toggleOn 0.4s linear forwards;
+  background-color: black;
+}
+
+@keyframes toggleOff {
+  0% {
+    background-color: white;
+    transform: translateX(23px);
+  }
+  100% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+}
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0px);
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+    transform: translateX(23px);
+  }
+}
+.body {
+  animation: bodyColorOff 0.4s linear forwards;
+}
+.bodyCss {
+  background-color: black;
+  animation: bodyColorON 0.4s linear forwards;
+}
+
+@keyframes bodyColorON {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes bodyColorOff {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+/* =======dark light slider button s end====== */
+
+/* responsive */
+
+@media(max-width: 700px){
+    .main-section{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
