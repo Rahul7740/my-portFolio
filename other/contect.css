@@ -30,6 +30,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    width: 100%;
 }
 .Send-message-text{
     color: #ff6db3;
@@ -38,7 +39,8 @@
 input{
     background-color: #ffffff5d;
     border-radius: 8px;
-    padding: 15px 50px 15px 15px ;
+    padding: 20px;
+    width: 100%;
     color: white;
     animation: inputsAnima 0.4s linear forwards;
     transform-origin: top;
@@ -86,4 +88,13 @@ input{
 .submit-btn:hover{
     background-color: white;
     color: #ff6db3;
+}
+@media(max-width: 900px){
+    .contect-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+    }
 }

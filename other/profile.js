@@ -2,6 +2,8 @@ let slider = document.querySelector(".slider");
 let cercle = document.querySelector(".cercle");
 let body = document.querySelector(".body");
 let menu = document.querySelector(".menu");
+let menu_btn = document.querySelector(".menu-btn")
+let right_arrow = document.querySelector(".right-arrow")
 
 
 let heading1 = document.querySelector(".h1");
@@ -17,3 +19,7 @@ slider.addEventListener("click", () => {
     profile_container.classList.toggle("profile-container-NewCss")
     profile_piture.classList.toggle("profile-piture-newCss");
 })
+menu_btn.addEventListener("click",()=>{
+    menu.classList.toggle("menu12")
+    right_arrow.classList.toggle("right-arrow-rotate")
+  })

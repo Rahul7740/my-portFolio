@@ -62,13 +62,22 @@ proj.map((value) => {
   
 });
 
-slider.addEventListener("click", () => {
-  cercle.classList.toggle("cercleNewCss");
-  body.classList.toggle("project-bodyCss");
-  menu.classList.toggle("menuNewCss");
+// slider.addEventListener("click", () => {
+//   cercle.classList.toggle("cercleNewCss");
+//   body.classList.toggle("project-bodyCss");
+//   menu.classList.toggle("menuNewCss");
 
-  for (let c of green) {
-    c.classList.toggle("change-color");
-  }
+//   for (let c of green) {
+//     c.classList.toggle("change-color");
+//   }
   
-});
+// });
+
+
+let menu_btn = document.querySelector(".menu-btn")
+let right_arrow = document.querySelector(".right-arrow")
+
+menu_btn.addEventListener("click",()=>{
+  menu.classList.toggle("menu12")
+  right_arrow.classList.toggle("right-arrow-rotate")
+})
