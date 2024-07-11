@@ -43,6 +43,16 @@ let proj = [
     link: "https://rahul7740.github.io/multiply-task/",
     img: "./images/mujltiply.JPG",
   },
+  {
+    name: "Age-Calculator",
+    link: "https://rahul7740.github.io/age-calculator/",
+    img: "./images/age-calculate.JPG",
+  },
+  {
+    name: "Detial-Print",
+    link: "https://rahul7740.github.io/Details-Print-task/",
+    img: "./images/details-print.JPG",
+  },
 ];
 
 proj.map((value) => {
@@ -56,10 +66,6 @@ proj.map((value) => {
                         <a href="${value.link}" title="link" target="_blank" class="project-Btn">Link</a>
                     </div>
                     `;
-
-  
-   
-  
 });
 
 // slider.addEventListener("click", () => {
