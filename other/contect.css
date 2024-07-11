@@ -7,8 +7,8 @@
     gap:  20px;
 }
 .body-Color{
-
     /* background: linear-gradient(to bottom, #5a7680 0%,#23538a 100%); */
+
     /* animation: bodyAnim 10s ; */
     background: linear-gradient(-45deg, #5c3327, #6b2540, #245f36, #0c5e4a);
 	background-size: 400% 400%;
