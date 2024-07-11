@@ -132,6 +132,7 @@ body {
   transition: all 0.52s;
   filter: drop-shadow(0 0 100px #ef4444a2);
   transform: scale(0.9);
+  margin: 0 auto ;
 }
 .benner:hover{
   filter: drop-shadow(0 0 100px #ef4444b9);
@@ -308,5 +309,15 @@ h1{
     .main-section{
         grid-template-columns: 1fr;
         gap: 0;
+    }
+    .menu{
+      left: 0;
+      top: 50%;
+      transform: translateX(-80%) translateY(-50%);
+      max-width: 50px;
+      width: 100%;
+      padding: 5px;
+      height: 25%;
+      flex-direction: column;
     }
 }
