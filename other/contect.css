@@ -10,19 +10,7 @@
     background: linear-gradient(-45deg, #5c3327, #6b2540, #245f36, #0c5e4a);
 	background-size: 400% 400%;
 	animation: bodyAnim 5s ease infinite;
-	position: relative;
 }
-/* ====background css========== */
-.large-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background:transparent;
-    z-index: -222;
-    /* background-position: center; */
-  }
 @keyframes bodyAnim {
     0% {
 		background-position: 0% 50%;
