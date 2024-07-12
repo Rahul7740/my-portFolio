@@ -63,7 +63,7 @@ proj.map((value) => {
                     <img class="projects-picture" src="${value.img}" alt="${value.name+"-img"}">
                     <div class="project-details-div">
                         <h3 class="project-names color-green">${value.name}</h3>
-                        <a href="${value.link}" title="link" target="_blank" class="project-Btn">Link</a>
+                        <a href="${value.link}" title="link" target="_blank" class="project-Btn"><h5 class="link-txt">Link</h5></a>
                     </div>
                     `;
 });

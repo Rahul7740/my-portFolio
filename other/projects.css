@@ -64,18 +64,22 @@
     font-size: 20px;
     color: white;
     font-family: "Walter Turncoat", cursive;
-    border-radius: 0 20px 0 20px;
-    background-color: gray;
-    border: 2px solid white;
+    border-radius: 8px;
+    border: 1px solid white;
     transition: all 0.5s;
     animation: btn-anima 0.8 s ease-in forwards;
 
 }
 .project-Btn:hover{
     background-color: transparent;
+    border: 1px solid #ef4444   ;
+}
+.link-txt{
+    transition: all 0.5s;
+}
+.project-Btn:hover .link-txt{
+    transform: scale(1.4);
     color: #ef4444;
-    border: 2px solid #ef4444   ;
-    transform: scale(1.1);
 }
 @keyframes projects-anima {
     0% {
