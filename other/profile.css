@@ -2,7 +2,7 @@
     color: white;
     text-align: center;
     font-size: 3rem;
-    margin: 45px 0;
+    padding: 45px 0;
     animation: h1Animation 1s linear forwards;
 }
 @keyframes h1Animation {
