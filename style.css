@@ -307,12 +307,12 @@ h1{
   position: absolute;
   background-color: #ef4444;
   top: 50%;
-  right: -20%;
-  width: 20%;
+  right: -35%;
+  width: 35%;
   height: 30%;
   transform: translateY(-50%);
   border-radius: 0 10px 10px 0;
-  padding-left: 2px;
+  padding-left: 7px;
   display: none;
   box-shadow: inset 0 0 15px white;
 }
@@ -333,7 +333,7 @@ h1{
       max-width: 50px;
       width: 100%;
       padding: 5px;
-      height: 30%;
+      height: 25%;
       flex-direction: column;
     }
     .menu-btn{
