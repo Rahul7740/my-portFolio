@@ -11,7 +11,7 @@ let proj = [
   {
     name: "meditation-center",
     link: "https://rahul7740.github.io/Meditation-center/",
-    img: "./images/Yoga Zone.jpg",
+    img: "./images/Yoga-Zone.jpg",
   },
   {
     name: "Login-page",
@@ -60,7 +60,7 @@ proj.map((value) => {
   div1.classList.add("projects");
   projects_container.appendChild(div1);
   div1.innerHTML = `
-                    <img class="projects-picture" src="${value.img}" alt="meditation-centres">
+                    <img class="projects-picture" src="${value.img}" alt="${value.name+"-img"}">
                     <div class="project-details-div">
                         <h3 class="project-names color-green">${value.name}</h3>
                         <a href="${value.link}" title="link" target="_blank" class="project-Btn">Link</a>
