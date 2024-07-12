@@ -62,6 +62,7 @@ input{
     transform-origin: top;
     max-width: 800px;
     width: 100%;
+    z-index: -333;
 }
 @keyframes imgAnima {
     0% {

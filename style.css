@@ -54,6 +54,7 @@ body {
   animation: menuOld 0.4s linear forwards;
   animation: menuanimation 1s linear forwards;
   transition: all 0.5s;
+  z-index: 99999;
 }
 .menu:hover{
     box-shadow: 6px 5px 10px #ffffff83;
