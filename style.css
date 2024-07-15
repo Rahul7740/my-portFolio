@@ -41,6 +41,7 @@ body {
   position: relative;
   /* overflow: hidden; */
 }
+
 .menu {
   display: flex;
   max-width: 350px;
