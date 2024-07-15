@@ -24,8 +24,8 @@
 }
 .profile-container{
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     justify-content: center;
     color: white;
     gap: 30px;
@@ -35,18 +35,15 @@
     color: black;
 }
 .profile-piture{
-    max-width: 350px;
-    width: 100%;
-    border-radius:0 30px 0 30px ;
-    box-shadow: -5px 5px 10px white;
+    /* max-width: 350px;
+    width: 100%; */
+    /* border-radius:0 30px 0 30px ; */
     transition: all 0.5s;
 }
 
 .profile-piture:hover{
     transform: translateY(-4px) scale(0.9);
-}
-.profile-piture-newCss{
-    box-shadow: -5px 5px 10px black;
+    filter:drop-shadow( 5px 5px 10px red);
 }
 .profile-details{
     font-family: "Walter Turncoat", cursive;

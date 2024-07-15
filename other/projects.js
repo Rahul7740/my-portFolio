@@ -53,6 +53,11 @@ let proj = [
     link: "https://rahul7740.github.io/Details-Print-task/",
     img: "./images/details-print.JPG",
   },
+  {
+    name: "logo",
+    link: "https://rahul7740.github.io/logo-website/",
+    img: "./images/logo-project.JPG",
+  },
 ];
 
 proj.map((value) => {
