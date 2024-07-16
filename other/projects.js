@@ -67,7 +67,7 @@ proj.map((value) => {
   div1.innerHTML = `
                     <img class="projects-picture" src="${value.img}" alt="${value.name+"-img"}">
                     <div class="project-details-div">
-                        <h3 class="project-names color-green">${value.name}</h3>
+                        <h3 class="project-names abc ">${value.name}</h3>
                         <a href="${value.link}" title="link" target="_blank" class="project-Btn"><h5 class="link-txt">Link</h5></a>
                     </div>
                     `;
@@ -92,3 +92,28 @@ menu_btn.addEventListener("click",()=>{
   menu.classList.toggle("menu12")
   right_arrow.classList.toggle("right-arrow-rotate")
 })
+
+
+let abcd = document.querySelectorAll(".abc");
+
+for (let i of abcd) {
+  let a = Array.from(i.innerHTML);
+  console.log(a);
+
+  i.innerHTML = "";
+  a.forEach((element) => {
+    i.innerHTML += `<span class="animation">${element}</span>`;
+  });
+  let pump = document.querySelectorAll(".animation");
+
+  pump.forEach((element) => {
+    element.addEventListener("mouseover", () => {
+      element.classList.add("pump");
+    });
+    element.addEventListener("mouseout", () => {
+      setTimeout(() => {
+        element.classList.remove("pump");
+      }, 500);
+    });
+  });
+}
