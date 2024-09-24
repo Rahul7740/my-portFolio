@@ -9,6 +9,26 @@ let projects = document.querySelectorAll(".projects");
 let projects_container = document.querySelector(".projects-container");
 let proj = [
   {
+    name: "Start-in-react",
+    link: "https://github.com/Rahul7740/Start-website-tailwind.git",
+    img: "./images/start-project.JPG",
+  },
+  {
+    name: "CoinDesk-in-react",
+    link: "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    img: "./images/CoinDesk-in-react.png",
+  },
+  {
+    name: "BuyNow-in-react",
+    link: "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    img: "./images/buynow-in-react.JPG",
+  },
+  {
+    name: "Exclusive-in-react",
+    link: "https://github.com/Rahul7740/Coin-Desk-tailwind.git",
+    img: "./images/Exclusive-in-react.JPG",
+  },
+  {
     name: "meditation-center",
     link: "https://rahul7740.github.io/Meditation-center/",
     img: "./images/Yoga-Zone.jpg",
